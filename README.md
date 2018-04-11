@@ -45,7 +45,8 @@ Execute this series of commands to compile MongoDB v3.4.4 with PebblesDB storage
 Start `mongod` using the `--storageEngine=pebblesdb` option.
 
 **NOTE:* Please edit `dynamic_syslibdeps.append("/usr/local/lib/libpebblesdb.so")` in `SConscript` to point 
-to your `libpebblesdb.so` path.
+to your `libpebblesdb.so` path. In addition, do `export LD_LIBRARY_PATH=$(path_to_libpebblesdb.so):$LD_LIBRARY_PATH`
+if `libpebblesdb.so` is not under `/usr/local/lib` directory.
 
 ### More information
 
