@@ -43,7 +43,10 @@ Execute this series of commands to compile MongoDB v3.4.4 with PebblesDB storage
     ulimit -n 5000
 
 Start `mongod` using the `--storageEngine=pebblesdb` option.
-    
+
+**NOTE:* Please edit `dynamic_syslibdeps.append("/usr/local/lib/libpebblesdb.so")` in `SConscript` to point 
+to your `libpebblesdb.so` path.
+
 ### More information
 
 To use this module, it has to be linked from `mongo/src/mongo/db/modules`. The build system will automatically recognize it. In the `mongo` repository directory do the following:

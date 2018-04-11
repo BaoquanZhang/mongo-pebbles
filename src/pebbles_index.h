@@ -32,7 +32,7 @@
 #include <boost/shared_ptr.hpp>
 #include <string>
 
-#include <hyperleveldb/db.h>
+#include <pebblesdb/db.h>
 
 #include "mongo/bson/ordering.h"
 #include "mongo/db/index/index_descriptor.h"
